@@ -1,0 +1,25 @@
+#example_wrapper{
+    width: 100%;
+}
+
+td{
+    text-align: center;
+}
+
+.item-img{
+    max-height: 100px;
+    border-radius: 20px;
+}
+.item-img-popup, .modal-dialog{
+    max-width: 50vw !important;
+    border-radius: 20px;
+}
+
+.btn-no-style{
+    background: none;
+	color: inherit;
+	border: 10px;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
+}
