@@ -1,18 +1,16 @@
 #example_wrapper{
     width: 100%;
 }
+#preview{
+    max-width: 100%;
+}
 
 td{
     text-align: center;
 }
 
-.item-img{
-    max-height: 100px;
-    border-radius: 20px;
-}
-.item-img-popup, .modal-dialog{
-    max-width: 50vw !important;
-    border-radius: 20px;
+.view{
+    max-width: 50px;
 }
 
 .btn-no-style{
