@@ -1,5 +1,5 @@
 <?php
-    if($_SERVER['REQUEST_METHOD'] === "POST"){
+    if($_SERVER['REQUEST_METHOD'] === "POST" && getimagesize($_FILES['imageFile']['tmp_name'])){
         $image = $_FILES['imageFile'];
         $name = $image['name'];
 
