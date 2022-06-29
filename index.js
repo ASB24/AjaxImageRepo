@@ -58,4 +58,24 @@ $(document).ready(function () {
             table.row.add([value, value, value]).draw();
         });
     });
+
+    $("#uploadForm").on("submit", function (e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: $(this).attr('action'),
+            data: new FormData(this),
+            dataType: "json",
+            encode: true,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                console.log(response);
+                table.row.add([response, response, response]).draw();
+            },
+            error: function(err){
+                console.log(err.responseText);
+            }
+        });
+    });
 });

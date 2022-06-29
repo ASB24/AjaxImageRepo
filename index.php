@@ -31,7 +31,7 @@
                     </table>
                 </div>
                 
-                <form action="" method="post" enctype="multipart/form-data">
+                <form action="./submit.php" method="post" enctype="multipart/form-data" id="uploadForm">
                     <h6 class="information mt-4">Upload Image</h6>
                     <div class="row">
                         <div class="col-sm-12">
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <button class="btn btn-primary btn-block confirm-button w-25 mx-auto">Upload</button>
+                        <button type="submit" class="btn btn-primary btn-block confirm-button w-25 mx-auto" id="uploadFile">Upload</button>
                     </div>
                 </form>
             </div>
